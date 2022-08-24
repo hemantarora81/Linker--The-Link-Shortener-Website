@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linker | Link Shortener</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Linker</h1>
+    </header>
+
+    <form onsubmit="event.preventDefault()">
+      <div class="input-grp">
+        <label for="url-box"
+          >URL
+          <textarea
+            name="url-box"
+            id="url-box"
+            placeholder="Place your link here..."
+            required
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="btn-grp">
+        <button id="submit-btn">Generate Link</button>
+      </div>
+
+      <div class="input-grp">
+        <input
+          type="url"
+          name="result-box"
+          id="result-box"
+          placeholder="Your shortened link will appear here..."
+          readonly
+        />
+        <button id="copy-btn">Copy</button>
+        <span id="custom-tooltip">copied!</span>
+      </div>
+    </form>
+
+    <script src="Shortener.js"></script>
+  </body>
+</html>

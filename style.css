@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    font-family: 'Open Sans';
+}
+
+header{
+    background-color: #0D0630;
+    padding: 20px; 
+    border-bottom: 5px solid #E6F9AF;
+}
+
+header h1{
+    color: white; 
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 15px;  */
+    margin: 20px auto;
+}
+
+.input-grp{
+    margin: 2em auto; 
+}
+
+.input-grp label{
+    display: flex;
+    align-items: center;
+}
+
+#url-box {
+    padding: 10px;
+    resize: none;
+    min-width: 200px;
+    width: 60vw;
+    max-width: 700px; 
+    height: 10vh;
+    margin-left: 1em; 
+    font-size: 14px; 
+    border: 1px solid #dddfe2;
+    border-radius: 5px; 
+    background-color: #f3f4f5;
+}
+
+#result-box{
+    border: 1px solid #dddfe2; 
+    background-color: #f3f4f5;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 200px;
+    width: 50vw;
+    max-width: 700px; 
+}
+
+.btn-grp{
+    margin: 0 auto; 
+}
+
+#submit-btn, #copy-btn{
+    margin: 0 auto;
+    background-color: #384E77;
+    padding: 0.6rem 2rem;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.3rem; 
+    font-weight: 600;
+}
+
+#copy-btn{
+    background-color: #2a9d8f;
+    display: none;
+    margin: 1em auto; 
+}
+
+#submit-btn:hover, #copy-btn:hover{
+    opacity: 0.8;
+}
+
+#submit-btn:active, #copy-btn:active{
+    transform: translateY(2px); 
+}
+
+
+#custom-tooltip {
+    display: none;
+    margin: auto;
+    padding: 5px 12px;
+    background-color: #000000df;
+    border-radius: 4px;
+    color: #fff;
+    width: max-content; 
+}
+
+@media all and (max-width: 768px){
+    header h1{
+        text-align: center;
+    }
+
+    #url-box{
+        width: 85vw; 
+    }
+
+    #result-box{
+        width: 80vw; 
+    }
+
+    #submit-btn, #copy-btn{
+        padding: 0.5em 1em; 
+        font-size: 1rem;
+    }
+}
